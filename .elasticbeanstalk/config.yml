@@ -1,0 +1,13 @@
+branch-defaults:
+  master:
+    environment: Hamda-env
+    default_ec2_keyname: e-pnf9zyzxkk
+    default_region: us-east-1
+global:
+  environment: null
+  application_name: hamda
+  include_git_submodules: true
+  sc: git
+  workspace_type: Application
+deploy:
+  artifact: ./Archive.zip

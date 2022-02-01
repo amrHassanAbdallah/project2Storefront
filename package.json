@@ -6,7 +6,9 @@
   "scripts": {
     "clean": "rm -rf ./dist || true",
     "test": "npm run clean && npm run build && NODE_ENV=testing && jasmine",
-    "build": "tsc"
+    "build": "tsc",
+    "prod:build": "npm run clean && npm run build && cp package.json dist/package.json && cd dist && zip -r ../Archive.zip . && cd .. ",
+    "deploy": "eb setenv PORT=8000 && eb deploy --staged"
   },
   "repository": {
     "type": "git",
