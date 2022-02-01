@@ -3,6 +3,10 @@ branch-defaults:
     environment: Hamda-env
     default_ec2_keyname: e-pnf9zyzxkk
     default_region: us-east-1
+  feat-ci-deloyment:
+    environment: Hamda-env
+    default_ec2_keyname: e-pnf9zyzxkk
+    default_region: us-east-1
 global:
   environment: Hamda-env
   default_ec2_keyname: e-pnf9zyzxkk
